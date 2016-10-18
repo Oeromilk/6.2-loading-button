@@ -8,7 +8,50 @@
   </head>
   <body>
 
-    <h1>Hello World!</h1>
+    <div class="app">
+      <div class="container">
+        <div class="row">
+          <div class = "col-md-12">
+            <h1>Get a list of pizzas already available to make!</h1>
+            <h4>One click will do.</h4>
+            <button id="submit-button" type="button" class="btn btn-primary btn-lg">Submit</button>
+            <h3>Tell the server what kind of pizza you want!</h3>
+            <form class="form-inline">
+              <div class="form-group">
+                <label for="exampleInputName2">Ingredient</label>
+                <input id="ingredient" type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail2">Name</label>
+                <input id="name" type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail2">Type</label>
+                <input id="type" type="text" class="form-control">
+              </div>
+              <button id="post-button" type="submit" class="btn btn-default">Send Pizza</button>
+            </form>
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Ingredients</th>
+                    <th>Pizza Name</th>
+                    <th>Type</th>
+                  </tr>
+                </thead>
+                <tbody id="pizza-container">
+                  <!-- Pizza List Goes Here -->
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
 
     <script src="js/bundle.js"></script>
   </body>
